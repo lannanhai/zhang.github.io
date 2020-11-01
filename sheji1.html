@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>设计</title>
+<style type="text/css">
+	* {
+    box-sizing: border-box;
+}
+ 
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+ 
+ 
+ 
+/* 标题 */
+.header {
+    padding: 80px;
+    text-align: center;
+    background:url(img/shouye.png);
+    color: white;
+}
+ 
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+}
+ 
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+ 
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+ 
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+}
+ 
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #F7F7F7;
+    color: black;
+}
+ 
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+ 
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+ 
+/* 主要的内容区域 */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+ 
+/* 测试图片*/ 
+.fakeimg {
+    width: 100%;
+    padding: 20px;
+}
+ 
+/* 底部 */
+.footer {
+    padding: 5px;
+    text-align: center;
+    background: #666666;
+    color:#F6F6F6;
+}
+ 
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+ 
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+</style>
+	</head>
+	
+	<body>
+<div class="header">
+  <h1>2019级计算机信息管理</h1>
+  <p>张洪祥</p>
+</div>
+ 
+<div class="navbar">
+  <a href="#">首页</a>
+  <a href="#">文档</a>
+  <a href="#">相关</a>
+  <a href="#" class="right">版权</a>
+</div>
+ 
+<div class="row">
+  <div class="side">
+      <div class="fakeimg" >
+      	<img src="img/logo.png"/>
+      </div>
+      <p>河南中医药大学（Henan University of Chinese Medicine）位于河南省郑州市，
+      	是河南省人民政府和国家中医药管理局共建高校、河南省特色骨干大学，
+      	是国家中西部高等教育振兴计划高校、教育部中国政府奖学金生培养高校、
+      	国家中医药国际合作基地、博士学位授权单位。是一所以中医药学科发展为特色，
+      	医、理、管、工、文等多学科协调发展的省属综合性普通本科高等院校。 </p>
+    <p>河南中医药大学的前身是创建于1953年的河南中医进修学校，1958年9月，河南中医学院成立;
+       1981年，学校被批准为首批硕士学位授予单位，2009年1月被确定为博士学位授权建设单位；2012年，
+               学校成为“国家中西部高等教育振兴计划”高校；2016年1月26日，教育部批准河南中医学院更名为河南中医药大学；
+       2016年3月10日，河南中医学院正式更名为河南中医药大学  。</p>
+    <p>根据2016年4月学校官网显示，河南中医药大学有4个校区，占地面积1594.94亩；有教职工1399人，其中专任教师982人；
+                设有18个院（部、中心），开办24个本科专业、6个专科专业，普通全日制在校生16000余人  。</p>
+     
+     
+  </div>
+  <div class="main">
+      <h2>专业介绍 </h2>
+      <h5>计算机信息管理</h5>
+      <div class="fakeimg">
+      	<img src="img/jisuanji.jpg" width=100% height=240px/>
+      </div>
+    
+    <p>核心课程：ASP.NET程序设计、数据库原理及其应用、SQL Server数据库、Photoshop平面设计基础、网页设计与网站规划、多媒体应用基础、医院管理学、中医药基础、医学基础等。
+         </p>
+    <p>培养目标：培养具有一定的医药学知识背景，较强的信息收集、处理、应用和分析能力，能够熟练运用、管理及设计数据库系统、管理信息系统的高素质技能型专门人才。
+           </p>
+    <p>就业趋向：适应于在IT行业及企、事业单位，尤其是医疗卫生相关行业，从事办公自动化，信息的采集、加工和管理，信息管理软件的建设、应用、管理和维护等工作。
+              </p>
+      <hr>
+      <h2>计算机专业介绍</h2>
+     
+      <div class="fakeimg" >
+      	<img src="img/zhuji.jpg" width=100% height=240px/>
+      	</div>
+      
+      <p>计算机专业是指计算机硬件与软件相结合、面向系统、更偏向应用的宽口径专业。通过基础教学与专业训练，培养基础知识扎实、知识面宽、工程实践能力强，具有开拓创新意识，
+      	在计算机科学与技术领域从事科学研究、教育、开发和应用的高级人才。
+             </p>
+      <p>计算机学科的特色主要体现在：理论性强，实践性强，发展迅速按一级学科培养基础扎实的宽口径人才，体现在重视数学、逻辑、数据结构、算法、电子设计、
+                   计算机体系结构和系统软件等方面的理论基础和专业技术基础，前两年半注重自然科学基础课程和专业基础课程，拓宽面向。后一年半主要是专业课程的设置，
+                   增加可选性、多样性、灵活性和方向性，突出学科方向特色，体现最新技术发展动向。
+              </p>
+              
+  </div>
+</div>
+ 
+<div class="footer">
+  <p>@2020.10.30 <a href="https://www.hactcm.edu.cn/" style="color: #F6F6F6;text-decoration:none;">河南中医药大学</a>（计算机信息管理)</p>
+  <p>@版权所有</p>
+</div>
+
+	</body>
+</html>
+
